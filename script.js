@@ -12,7 +12,7 @@ const mapping ={
 };
 
 
-function letterCombinations(input_digit) {
+function letterCombinations(digits) {
   //Complete the function
   if(!digits) return []
   let result = [''];
@@ -21,7 +21,7 @@ function letterCombinations(input_digit) {
     let temp = []
     for(let j=0;j< result.length;j++){
       for(let k=0;k<mapping[currentDigit].length;k++){
-        temp.push(result[j]+ mapping[currentDigit][k]);
+        temp.push(result[j] + mapping[currentDigit][k]);
       
       }
     }
