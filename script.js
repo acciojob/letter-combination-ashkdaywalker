@@ -16,10 +16,10 @@ function letterCombinations(digits) {
   //Complete the function
   if(!digits) return []
   let result = [''];
-  for(let i=0;i< digits.length;i++){
+  for(let i = 0;i < digits.length;i++){
     let currentDigit = digits[i];
     let temp = []
-    for(let j=0;j< result.length;j++){
+    for(let j = 0;j< result.length;j++){
       for(let k=0;k<mapping[currentDigit].length;k++){
         temp.push(result[j] + mapping[currentDigit][k]);
       
